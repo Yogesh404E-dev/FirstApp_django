@@ -3,10 +3,10 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-    return render(request,'home.html',{'name':'Yogesh'})
+    return render(request,'home.html',{'name':'Yogesh S S'})
 
 def add(request):
     val1 = int(request.POST['num1'])
     val2 = int(request.POST['num2'])
     res = val1 + val2
-    return render(request,'result.html',{'result':res})
+    return render(request,'result.html',{'result':res,'name':'Yogesh S S'})

@@ -1,8 +1,21 @@
 {% extends 'base.html' %} 
 
+{% block header %}
+<div class="jumbotron text-center">
+    <h1>Hello {{name}}</h1>
+       
+  </div>
+  {% endblock header %}
 
 {% block content %}
+<div class="row">
+
+    <div class="col-md-2"></div>
+    <div class="col-sm-8">
+        <h2>Addition result = : {{result}}</h2>
+    <div class="col-md-2"></div>
     
-Addition result = : {{result}}
+    </div> 
+
 {% endblock content %}
     
